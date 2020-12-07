@@ -18,7 +18,7 @@
     </properties>
 
     <dependencies>
-<!--        mybait plus-->
+        <!--        mybait plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>

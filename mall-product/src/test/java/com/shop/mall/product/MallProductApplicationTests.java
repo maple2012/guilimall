@@ -9,15 +9,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class MallProductApplicationTests {
 
-	@Autowired
-	BrandService brandService;
-	@Test
-	void contextLoads() {
-		BrandEntity brandEntity = new BrandEntity();
-		brandEntity.setName("xxxx");
-		brandEntity.setDescript("hhah");
-		brandService.save(brandEntity);
-		System.out.println("保存成功");
-	}
+    @Autowired
+    BrandService brandService;
+
+    @Test
+    void contextLoads() {
+        BrandEntity brandEntity = new BrandEntity();
+        brandEntity.setName("xxxx");
+        brandEntity.setDescript("hhah");
+        brandService.save(brandEntity);
+        System.out.println("保存成功");
+    }
 
 }

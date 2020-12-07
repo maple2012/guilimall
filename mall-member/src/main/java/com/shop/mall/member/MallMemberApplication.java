@@ -13,8 +13,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 public class MallMemberApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MallMemberApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MallMemberApplication.class, args);
+    }
 
 }

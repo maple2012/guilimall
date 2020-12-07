@@ -7,8 +7,6 @@ import com.shop.mall.order.entity.MqMessageEntity;
 import java.util.Map;
 
 /**
- * 
- *
  * @author xufeng
  * @email xudevins@gmail.com
  * @date 2020-11-21 14:32:28

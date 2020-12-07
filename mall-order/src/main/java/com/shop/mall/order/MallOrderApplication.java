@@ -10,8 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 public class MallOrderApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MallOrderApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MallOrderApplication.class, args);
+    }
 
 }

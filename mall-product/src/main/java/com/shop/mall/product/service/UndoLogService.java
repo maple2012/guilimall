@@ -7,8 +7,6 @@ import com.shop.mall.product.entity.UndoLogEntity;
 import java.util.Map;
 
 /**
- * 
- *
  * @author xufeng
  * @email xudevins@gmail.com
  * @date 2020-11-21 10:44:01

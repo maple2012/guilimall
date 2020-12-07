@@ -10,8 +10,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @MapperScan("com.shop.mall.coupon.dao")
 public class MallGatewayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MallGatewayApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MallGatewayApplication.class, args);
+    }
 
 }

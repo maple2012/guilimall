@@ -34,10 +34,10 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
     public List<CategoryEntity> listWithTree() {
         List<CategoryEntity> categoryEntityList = baseMapper.selectList(null);
 
-        List<CategoryEntity> categoryEntities = categoryEntityList.stream().filter(item -> item.getParentCid() == 0).map((menu)->{
-            menu.setChildren(getChildrens(menu,categoryEntityList));
+        List<CategoryEntity> categoryEntities = categoryEntityList.stream().filter(item -> item.getParentCid() == 0).map((menu) -> {
+            menu.setChildren(getChildrens(menu, categoryEntityList));
             return menu;
-        }).sorted((menu1,menu2)->{
+        }).sorted((menu1, menu2) -> {
             return (menu1.getSort() == null ? 0 : menu1.getSort()) - (menu2.getSort() == null ? 0 : menu2.getSort());
         }).collect(Collectors.toList());
 
@@ -45,7 +45,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return categoryEntities;
     }
 
-    private List<CategoryEntity> getChildrens(CategoryEntity root,List<CategoryEntity> all){
+    private List<CategoryEntity> getChildrens(CategoryEntity root, List<CategoryEntity> all) {
         List<CategoryEntity> collect = all.stream().filter(categoryEntity -> {
             return categoryEntity.getParentCid() == root.getCatId();
         }).map(categoryEntity -> {
